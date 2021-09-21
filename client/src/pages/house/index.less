@@ -1,0 +1,81 @@
+@import '../../assets/mixin.less';
+
+:global {
+  .house-page {
+    .banner {
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .info {
+      margin: 12px;
+      padding: 12px;
+      background: #fff;
+      &-title {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      &-msg {
+        padding: 5px 0;
+      }
+      &-btn {
+        margin-top: 12px;
+      }
+    }
+
+    .comment {
+      padding-bottom: 0.1px;
+      &-title {
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: 12px;
+        margin-top: 20px;
+      }
+      &-list {
+        margin: 12px 12px 60px 12px;
+        background: #fff;
+        &_item {
+          .flex(row, flex-start, flex-start);
+          padding: 12px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+          .right {
+            flex: 1;
+            padding-left: 16px;
+            &-top {
+              .flex(row, center, space-between);
+            }
+            &-bottom {
+              color: rgba(0, 0, 0, 0.4);
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      .flex(row, center, flex-start);
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background: #fff;
+      height: 25px;
+      padding: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 20px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+  }
+}
